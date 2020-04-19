@@ -13,8 +13,10 @@ z-index:-1;
     content: url(${backgroundPattern1});
     display: table;
     position: absolute;
+    bottom:0;
+    right: 0;
     bottom: -86px;
-    right: -261px;
+    left: 261px;
     z-index:-1;
 }
 

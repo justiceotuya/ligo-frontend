@@ -6,7 +6,10 @@ padding: 32px;
 background: ${props => props.theme.white1};
 box-shadow: 0px 9px 20px #38383829;
 border-radius: 10px;
-
+max-width: 100%;
+:not(:last-child) {
+  margin-bottom: 40px;
+}
 h3{
     /* font-weight: 100; */
     font-size: 20px;
@@ -24,24 +27,15 @@ font-weight: 100;
 letter-spacing: 0.4px;
 font-size: 14px;
 }
-
- @media (min-width: 600px) {
-h3{font-size:15px}
-h4{font-size:23px}
-    font-size:15px;
-
-}
-
- @media (min-width: 1024px) {
-h3{font-size:20px}
-h4{font-size:28px}
-p{
-    font-size:20px;
+@media screen and (min-width: 600px) {
+max-width: 80%;
+:last-child {
+  margin-bottom: 40px;
 }
 }
-
-
-
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+max-width: 50%
+}
 `;
 
 export const StyledHowLigoWorksSection = styled.section`
@@ -65,31 +59,11 @@ h2 {
 }
 
 .ligo-container {
-display: grid;
-  grid-gap: 40px;
+display: flex;
+flex-direction: row;
+flex-flow:wrap;
+justify-content: space-evenly;
 margin:0 auto;
-max-width: 1220px;
+max-width: 1024px;
 }
-
- @media (min-width: 600px) {
-padding: 150px 50px;
-h2{
-    margin-bottom: 50px;
-    font-size:38px;
-}
- .ligo-container {
-     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 66px;
- }
-}
-
- @media (min-width: 1024px) {
-padding: 220px 50px;
-h2{
-    margin-bottom: 72px;
-    font-size: 48px;
-}
-}
-
-
 `;

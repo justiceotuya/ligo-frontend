@@ -14,7 +14,7 @@ z-index:-1;
     display: table;
     position: absolute;
     bottom: -86px;
-    right: -261px;
+    left: 261px;
     z-index:-1;
 }
 

@@ -19,21 +19,19 @@ const LigoAboutCard = ({ stepNumber, stepDetail, stepTitle }) => (
 export const LigoAboutCardsSection = () => (
     <StyledHowLigoWorksSection>
         <h2>{HOW_LIGO_WORKS}</h2>
-        <div className="ligo-container">
-            {
-                ligoCardsDetails.map(details => {
-                    const { stepNumber, stepDetail, stepTitle } = details;
-                    return (
-                        <LigoAboutCard
-                            key={details.stepNumber}
-                            stepNumber={stepNumber}
-                            stepDetail={stepDetail}
-                            stepTitle={stepTitle}
-                        />
-                    );
-                })
-            }
-        </div>
+        {
+            ligoCardsDetails.map(details => {
+                const { stepNumber, stepDetail, stepTitle } = details;
+                return (
+                    <LigoAboutCard
+                        key={details.stepNumber}
+                        stepNumber={stepNumber}
+                        stepDetail={stepDetail}
+                        stepTitle={stepTitle}
+                    />
+                );
+            })
+        }
     </StyledHowLigoWorksSection>
 );
 

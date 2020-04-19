@@ -5,16 +5,18 @@ export const StyledHeroSection = styled.section`
 height: 80vh;
 padding: 40px 36px 0 31px;
 position:relative;
-background-color: ${props => props.theme.blue5};
-overflow:hidden;
-z-index:-1;
+background-color: rgba(91,255,255);
+ z-index:-1;
+
 
 ::after {
     content: url(${backgroundPattern1});
     display: table;
+    height: 100%;
+    width:100%;
     position: absolute;
-    bottom: -86px;
-    right: -261px;
+    bottom:0;
+    right: 0;
     z-index:-1;
 }
 

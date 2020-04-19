@@ -50,7 +50,6 @@ export function register(config) {
                 });
             } else {
                 // Is not localhost. Just register service worker
-                // eslint-disable-next-line no-use-before-define
                 registerValidSW(swUrl, config);
             }
         });

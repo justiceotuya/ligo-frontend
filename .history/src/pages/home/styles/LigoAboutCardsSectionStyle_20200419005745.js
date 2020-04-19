@@ -26,10 +26,9 @@ font-size: 14px;
 }
 
  @media (min-width: 600px) {
-h3{font-size:15px}
-h4{font-size:23px}
-    font-size:15px;
-
+h3{}
+h4{}
+p{}
 }
 
  @media (min-width: 1024px) {
