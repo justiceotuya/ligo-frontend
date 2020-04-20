@@ -85,7 +85,7 @@ export const ligoBenefits = [
         img: user,
         text: `Drive when it works for you. That
         means you’ll always start and stop on your
-        time—because with the Uber app, you’re in charge.`,
+        time—because with the Ligo app, you’re in charge.`,
         title: 'You’re in charge of your own schedule',
     },
 ];

@@ -21,4 +21,18 @@ text-decoration: none;
     }
 }
 }
+
+@media screen and (min-width: 600px){
+        height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    p{
+    margin-bottom:0;
+}
+div{
+    width: 150px;
+}
+}
 `;

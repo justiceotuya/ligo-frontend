@@ -6,6 +6,8 @@ padding: 32px;
 background: ${props => props.theme.white1};
 box-shadow: 0px 9px 20px #38383829;
 border-radius: 10px;
+max-width: 436px;
+margin: 0 auto;
 
 h3{
     /* font-weight: 100; */
@@ -20,9 +22,11 @@ h4{
 }
 p{
 line-height: 150%;
-font-weight: 100;
+font-weight: normal;
 letter-spacing: 0.4px;
 font-size: 14px;
+     color: ${props => props.theme.black1};
+
 }
 
  @media (min-width: 600px) {
@@ -49,7 +53,7 @@ padding: 72px 36px;
 background-color: ${props => props.theme.white2};
    position: relative;
  overflow:hidden;
-z-index:-1;
+z-index:0;
 
 ::after {
     content: url(${backgroundPattern2});
@@ -61,6 +65,7 @@ z-index:-1;
 h2 {
     text-align:center;
     font-size:24px;
+    font-weight:500;
     margin-bottom:20px;
 }
 
@@ -72,7 +77,8 @@ max-width: 1220px;
 }
 
  @media (min-width: 600px) {
-padding: 150px 50px;
+/* padding: 150px 50px; */
+
 h2{
     margin-bottom: 50px;
     font-size:38px;
@@ -84,7 +90,10 @@ h2{
 }
 
  @media (min-width: 1024px) {
-padding: 220px 50px;
+/* padding: 220px 50px; */
+ height: 80vh;
+    display: grid;
+    place-content: center;
 h2{
     margin-bottom: 72px;
     font-size: 48px;

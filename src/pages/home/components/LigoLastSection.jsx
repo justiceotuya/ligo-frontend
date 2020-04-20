@@ -53,15 +53,17 @@ export const LigoLastSection = () => (
                 alt="driver searching for passenger"
             />
         </div>
-        <div className="text-content">
-            <h2>{DRIVE_AND_BE_YOUR_BASE}</h2>
-            <p>{SIGNUP_CONTENT}</p>
+        <div className="text-container">
+            <div className="text-content">
+                <h2>{DRIVE_AND_BE_YOUR_BASE}</h2>
+                <p>{SIGNUP_CONTENT}</p>
+            </div>
+            <LigoLastSectionBenefits />
+            <Link to="/signup" className="signup-link">
+                <span>{SIGN_UP_TO_DRIVE}</span>
+                <img src={arrowRight} alt="go to signup" />
+            </Link>
         </div>
-        <LigoLastSectionBenefits />
-        <Link to="/signup" className="signup-link">
-            <span>{SIGN_UP_TO_DRIVE}</span>
-            <img src={arrowRight} alt="go to signup" />
-        </Link>
     </StyledLigoLastSectionWrapper>
 );
 
