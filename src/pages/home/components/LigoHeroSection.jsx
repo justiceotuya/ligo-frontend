@@ -19,7 +19,7 @@ export const LigoHeroSection = () => (
     <StyledHeroSection>
         <nav>
             <NavLink to="/">
-                <img src={ligoIcon} alt="home" className="home-logo" />
+                <img src={ligoIcon} alt="home" className="home-logo" loading="eager"/>
             </NavLink>
 
             <div>
@@ -47,7 +47,7 @@ export const LigoHeroSection = () => (
                     {/* </div> */}
                 </div>
                 <div className="hero-image">
-                    <img src={womanImg} alt="woman pressing phone" />
+                    <img src={womanImg} alt="woman pressing phone" loading="eager/>
                 </div>
             </div>
         </div>

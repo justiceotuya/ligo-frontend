@@ -13,7 +13,7 @@ export const LigoFooter = () => (
                     const { image, links, name } = item;
                     return (
                         <a href={links} key={name}>
-                            <img src={image} alt={name} className="image" />
+                            <img src={image} alt={name} className="image" loading="lazy"/>
                         </a>
                     );
                 })

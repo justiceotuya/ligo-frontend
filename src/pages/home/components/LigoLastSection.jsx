@@ -19,7 +19,7 @@ const LigoLastSectionBenefit = ({
     <div className="reasons-item">
         <div className="icon-div">
             <span className="icon-container">
-                <img src={img} alt={alt} className="icon" />
+                <img src={img} alt={alt} className="icon" loading="lazy"/>
             </span>
         </div>
         <div>
@@ -51,6 +51,7 @@ export const LigoLastSection = () => (
                 srcSet={`${driverSearchingSmall} 480w, ${driverSearchingBig}`}
                 src={driverSearchingBig}
                 alt="driver searching for passenger"
+                loading="lazy"
             />
         </div>
         <div className="text-container">
@@ -61,7 +62,7 @@ export const LigoLastSection = () => (
             <LigoLastSectionBenefits />
             <Link to="/signup" className="signup-link">
                 <span>{SIGN_UP_TO_DRIVE}</span>
-                <img src={arrowRight} alt="go to signup" />
+                <img src={arrowRight} alt="go to signup" loading="eager"/>
             </Link>
         </div>
     </StyledLigoLastSectionWrapper>
