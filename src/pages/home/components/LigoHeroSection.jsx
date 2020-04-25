@@ -47,7 +47,7 @@ export const LigoHeroSection = () => (
                     {/* </div> */}
                 </div>
                 <div className="hero-image">
-                    <img src={womanImg} alt="woman pressing phone" loading="eager/>
+                    <img src={womanImg} alt="woman pressing phone" loading="eager"/>
                 </div>
             </div>
         </div>
