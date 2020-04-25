@@ -19,7 +19,7 @@ const LigoLastSectionBenefit = ({
     <div className="reasons-item">
         <div className="icon-div">
             <span className="icon-container">
-                <img src={img} alt={alt} className="icon" loading="lazy"/>
+                <img src={img} alt={alt} className="icon" loading="lazy" />
             </span>
         </div>
         <div>
@@ -60,9 +60,17 @@ export const LigoLastSection = () => (
                 <p>{SIGNUP_CONTENT}</p>
             </div>
             <LigoLastSectionBenefits />
-            <Link to="/signup" className="signup-link">
+            <Link
+                className="signup-link"
+                to={{
+                    pathname: '/signup',
+                    state: {
+                        selected: 'driver',
+                    },
+                }}
+            >
                 <span>{SIGN_UP_TO_DRIVE}</span>
-                <img src={arrowRight} alt="go to signup" loading="eager"/>
+                <img src={arrowRight} alt="go to signup" loading="eager" />
             </Link>
         </div>
     </StyledLigoLastSectionWrapper>

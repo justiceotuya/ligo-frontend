@@ -13,7 +13,7 @@ const ChooseLigoReason = ({ alt, img, text }) => (
     <div className="reasons-item">
         <div className="icon-div">
             <span className="icon-container">
-                <img src={img} alt={alt} className="icon" loading="lazy"/>
+                <img src={img} alt={alt} className="icon" loading="lazy" />
             </span>
         </div>
         <p>{text}</p>
@@ -34,7 +34,7 @@ const ChooseLigoReasons = () => ligoReasons.map(reason => {
 export const LigoReasonsSection = () => (
     <StyledReasonsSection>
         <div className="image">
-            <img src={driver} alt="driver" loading="lazy"/>
+            <img src={driver} alt="driver" loading="lazy" />
         </div>
         <div className="reasons">
             <h2>

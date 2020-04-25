@@ -19,7 +19,7 @@ export const LigoHeroSection = () => (
     <StyledHeroSection>
         <nav>
             <NavLink to="/">
-                <img src={ligoIcon} alt="home" className="home-logo" loading="eager"/>
+                <img src={ligoIcon} alt="home" className="home-logo" loading="eager" />
             </NavLink>
 
             <div>
@@ -27,6 +27,7 @@ export const LigoHeroSection = () => (
                     <Button
                         link="/signup"
                         btnText="Earn with Ligo"
+                        selected="driver"
                     />
                 </span>
                 <img src={hamburger} alt="hamburger" className="home-hamburger" />
@@ -40,14 +41,14 @@ export const LigoHeroSection = () => (
                     <p>{LIGO_DESCRIPTION}</p>
                     {/* <div className="cta-button-container"> */}
                     <Button
-
+                        selected="rider"
                         link="/signup"
                         btnText={GET_STARTED}
                     />
                     {/* </div> */}
                 </div>
                 <div className="hero-image">
-                    <img src={womanImg} alt="woman pressing phone" loading="eager"/>
+                    <img src={womanImg} alt="woman pressing phone" loading="eager" />
                 </div>
             </div>
         </div>

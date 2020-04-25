@@ -20,8 +20,14 @@ const StyledButton = styled(Link)`
 }
 `;
 
-export const Button = ({ link, btnText }) => (
-    <StyledButton to={link}>
+export const Button = ({ link, btnText, selected }) => (
+    <StyledButton to={{
+        pathname: link,
+        state: {
+            selected,
+        },
+    }}
+    >
         {btnText}
     </StyledButton>
 );
@@ -29,4 +35,9 @@ export const Button = ({ link, btnText }) => (
 Button.propTypes = {
     btnText: propTypes.string.isRequired,
     link: propTypes.string.isRequired,
+    selected: propTypes.string,
+};
+
+Button.defaultProps = {
+    selected: 'rider',
 };
