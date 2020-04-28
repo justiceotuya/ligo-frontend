@@ -50,7 +50,7 @@ overflow:hidden;
       }
   }
 
-.drive-with-ligo{
+ .take-ride-with-ligo{
     visibility: ${props => (props.selected === 'rider' ? 'visible' : 'hidden')};
     opacity: ${props => (props.selected === 'rider' ? '1' : '0')};
     transform: ${props => (props.selected === 'rider' ? 'scale(1)' : 'scale(0)')};
@@ -58,7 +58,7 @@ overflow:hidden;
     right: ${props => (props.selected === 'rider' ? '1%' : '300px')};
     transition:all .2s ease-in-out .3s;
 }
-.take-ride-with-ligo{
+.drive-with-ligo{
     visibility: ${props => (props.selected !== 'rider' ? 'visible' : 'hidden')};
     opacity: ${props => (props.selected !== 'rider' ? '1' : '0')};
     bottom: ${props => (props.selected !== 'rider' ? '72px' : '-720px')};
